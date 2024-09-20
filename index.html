@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica de Nudos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div id="preInicio">
+            <h2>Lista de Nudos</h2>
+            <ul id="listaNudos"></ul>
+            <button id="startButton" onclick="iniciarPractica()">Iniciar</button>
+        </div>
+        <div id="practica" style="display: none;">
+            <div class="nudo">Nudo: <span id="nudoActual"></span></div>
+            <div class="contador">Tiempo: <span id="contador"></span> segundos</div>
+            <button id="nextButton" onclick="siguienteNudo()">Siguiente Nudo</button>
+            <button id="stopButton" onclick="detenerPractica()">Detener</button>
+            <button id="reanudarButton" onclick="reanudarPractica()">Reanudar</button>
+        </div>
+        <div id="resultados" style="margin-top: 20px;">
+            <h3>Resultados:</h3>
+            <ul id="resultadosLista"></ul>
+            <button id="reiniciarButton" style="display:none;" onclick="reiniciarPractica()">Reiniciar</button>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>

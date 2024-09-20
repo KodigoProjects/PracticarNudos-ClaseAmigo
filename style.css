@@ -1,0 +1,105 @@
+/* Fuente global */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f7f8fa;
+    text-align: center;
+    margin: 0;
+    padding: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Contenedor general */
+.container {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    max-width: 700px;
+    width: 100%;
+    transition: all 0.3s ease;
+}
+
+/* Título */
+h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #2e3d49;
+    margin-bottom: 20px;
+}
+
+/* Botones */
+button {
+    padding: 12px 35px;
+    font-size: 1.1rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    margin: 10px;
+}
+
+/* Hover sencillo */
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilo de botón de reinicio */
+#reiniciarButton {
+    background-color: #28a745;
+}
+
+#reiniciarButton:hover {
+    background-color: #218838;
+}
+
+/* Botón reanudar */
+#reanudarButton {
+    background-color: #ffc107;
+    display: none;
+}
+
+#reanudarButton:hover {
+    background-color: #e0a800;
+}
+
+/* Resultados */
+#resultados ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    color: #333;
+}
+
+#resultados ul li {
+    font-size: 1rem;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Estilo de texto para subtítulos */
+h3 {
+    font-size: 1.6rem;
+    color: #555;
+    margin-top: 20px;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .container {
+        padding: 30px;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    button {
+        font-size: 1rem;
+        padding: 10px 25px;
+    }
+}
